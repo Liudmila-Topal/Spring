@@ -1,8 +1,18 @@
 package com.lp.spring;
 
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Person {
 
     private Pet pet;
+
+    private String surname;
+
+    private int age;
 
     public Person(){
         System.out.println("Person bean is created");
