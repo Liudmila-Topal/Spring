@@ -1,5 +1,6 @@
 package com.lp.spring;
 
+//import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test3 {
@@ -10,9 +11,13 @@ public class Test3 {
 //        person.callYourPet();
 
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext.xml");
+                new ClassPathXmlApplicationContext("file:resources/applicationContext.xml");
+
         Person person = context.getBean("myPerson", Person.class);
         person.callYourPet();
+
+        System.out.println(person.getSurname());
+        System.out.println(person.getAge());
 
         context.close();
     }
