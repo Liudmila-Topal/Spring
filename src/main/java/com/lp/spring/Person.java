@@ -18,10 +18,10 @@ public class Person {
         System.out.println("Person bean is created");
     }
 
-    public Person(Pet pet){
-        System.out.println("Person bean is created");
-        this.pet = pet;
-    }
+//    public Person(Pet pet){
+//        System.out.println("Person bean is created");
+//        this.pet = pet;
+//    }
 
     //pet -> setPet
     public void setPet(Pet pet) {
