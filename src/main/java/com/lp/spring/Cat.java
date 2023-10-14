@@ -1,5 +1,8 @@
 package com.lp.spring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Cat implements Pet{
 
     public Cat(){
