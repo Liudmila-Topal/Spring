@@ -1,4 +1,8 @@
-package com.lp.spring;
+package com.lp.spring.Test;
+
+import com.lp.spring.Cat;
+import com.lp.spring.Dog;
+import com.lp.spring.Pet;
 
 public class Test1 {
     public static void main(String[] args) {
