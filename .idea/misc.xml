@@ -12,7 +12,7 @@
     <resource url="http://www.springframework.org/schema/beans" location="$PROJECT_DIR$" />
     <default-html-doctype>jar:file:\D:\Prog\Idea\IntelliJ IDEA Community Edition 2022.3\lib\app.jar!\standardSchemas\xhtml1-transitional.xsd</default-html-doctype>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectType">

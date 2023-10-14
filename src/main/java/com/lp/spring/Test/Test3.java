@@ -1,6 +1,7 @@
 package com.lp.spring.Test;
 
 //import org.springframework.context.ApplicationContext;
+import com.lp.spring.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test3 {
