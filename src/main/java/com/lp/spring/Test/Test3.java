@@ -1,4 +1,4 @@
-package com.lp.spring;
+package com.lp.spring.Test;
 
 //import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

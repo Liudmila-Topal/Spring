@@ -1,5 +1,6 @@
-package com.lp.spring;
+package com.lp.spring.Test;
 
+import com.lp.spring.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test2 {
