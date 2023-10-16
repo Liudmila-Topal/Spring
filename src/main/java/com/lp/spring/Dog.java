@@ -11,18 +11,18 @@ import javax.annotation.PreDestroy;
 
 @Getter
 @Setter
-@Component
+//@Component
 //@Scope("prototype")
 public class Dog implements Pet {
 
     private String name;
 
-    @PostConstruct
+//    @PostConstruct
     public void init() {
         System.out.println("Dog class: init method");
     }
 
-    @PreDestroy
+//    @PreDestroy
     public void destroy() {
         System.out.println("Dog class: destroy method");
     }
