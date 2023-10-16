@@ -1,12 +1,12 @@
 package com.lp.spring.Test;
 
-import com.lp.spring.Dog;
+import com.lp.spring.objects.Dog;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestBeanScope {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContextBeanScope.xml"); // by default - Singleton
+                new ClassPathXmlApplicationContext("applicationContext/applicationContextBeanScope.xml"); // by default - Singleton
 
         Dog myDog = context.getBean("myPet", Dog.class);
         myDog.setName("Belka");

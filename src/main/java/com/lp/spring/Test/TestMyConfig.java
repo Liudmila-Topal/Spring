@@ -1,7 +1,6 @@
 package com.lp.spring.Test;
 
-import com.lp.spring.Person;
-import com.lp.spring.Pet;
+import com.lp.spring.objects.Person;
 import com.lp.spring.config.TestConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

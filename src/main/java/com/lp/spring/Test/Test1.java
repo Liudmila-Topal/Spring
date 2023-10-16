@@ -1,7 +1,7 @@
 package com.lp.spring.Test;
 
-import com.lp.spring.Cat;
-import com.lp.spring.Dog;
+import com.lp.spring.objects.Cat;
+import com.lp.spring.objects.Dog;
 import com.lp.spring.Pet;
 
 public class Test1 {

@@ -1,12 +1,12 @@
 package com.lp.spring.Test;
 
-import com.lp.spring.Dog;
+import com.lp.spring.objects.Dog;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ScopeTest {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContextWithAnnotations.xml");
+                new ClassPathXmlApplicationContext("applicationContext/applicationContextWithAnnotations.xml");
 
         Dog myDog = context.getBean("dog", Dog.class);
         myDog.say();

@@ -1,9 +1,10 @@
-package com.lp.spring;
+package com.lp.spring.objects;
 
+import com.lp.spring.Pet;
 import org.springframework.stereotype.Component;
 
 //@Component("catBean")
-public class Cat implements Pet{
+public class Cat implements Pet {
 
     public Cat(){
         System.out.println("Cat bean is created");

@@ -10,18 +10,18 @@
     <context:property-placeholder location="myApp.properties"/>
 
     <bean id = "myPet"
-          class="com.lp.spring.Cat" >
+          class="com.lp.spring.objects.Cat" >
     </bean>
 
 <!--        vnedrenie zavisimostei with constructor help-->
 <!--    <bean id = "myPerson"-->
-<!--          class="com.lp.spring.Person">-->
+<!--          class="com.lp.spring.objects.Person">-->
 <!--        <constructor-arg ref="myPet"></constructor-arg>-->
 <!--    </bean>-->
 
     <!--    vnedrenie zavisimostei with setter help-->
     <bean id = "myPerson"
-          class="com.lp.spring.Person">
+          class="com.lp.spring.objects.Person">
         <!--    DI -->
         <property name="pet" ref="myPet"/>
 
