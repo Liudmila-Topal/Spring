@@ -12,15 +12,16 @@ public class Test1 {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(TestConfig.class);
 
         UniversityLibrary universityLibrary = context.getBean("universityLibrary", UniversityLibrary.class);
-//        Book book = context.getBean("book", Book.class);
+        Book book = context.getBean("book", Book.class);
 //        universityLibrary.getBookWithParameter(book);
 
 
 
-        universityLibrary.getBook();
+//        universityLibrary.getBook();
 //        universityLibrary.returnBook();
-        universityLibrary.getMagazine();
-//        universityLibrary.addBook();
+//        universityLibrary.getMagazine();
+        universityLibrary.addBook("LP", book);
+        universityLibrary.addMagazine();
 //
 //        SchoolLibrary schoolLibrary = context.getBean("schoolLibrary", SchoolLibrary.class);
 //        schoolLibrary.getBook();

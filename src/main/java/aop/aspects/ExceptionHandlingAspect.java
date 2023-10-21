@@ -13,5 +13,12 @@ public class ExceptionHandlingAspect {
     @Before("aop.aspects.MyPointCats.allGetMethods()")
     public void beforeGetExceptionHandlingAdvice(){
         System.out.println("beforeGetExceptionHandlingAdvice: find exceptions");
+        System.out.println("------------------------------");
+    }
+
+    @Before("aop.aspects.MyPointCats.allAddMethods()")
+    public void beforeAddLoggingAdvice(){
+        System.out.println("beforeAddLoggingAdvice: before add book we need to find exceptions");
+        System.out.println("------------------------------");
     }
 }

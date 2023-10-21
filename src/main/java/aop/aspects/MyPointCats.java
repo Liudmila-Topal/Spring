@@ -8,4 +8,8 @@ public class MyPointCats {
     public void allGetMethods() {
     }
 
+    @Pointcut("execution(* add*(..))")
+    public void allAddMethods() {
+    }
+
 }

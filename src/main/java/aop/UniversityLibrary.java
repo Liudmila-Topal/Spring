@@ -12,22 +12,27 @@ public class UniversityLibrary extends AbstractLibrary{
 
     public void returnBook(){
         System.out.println("We returned book to university");
+        System.out.println("------------------------------");
     }
 
     public void getMagazine(){
         System.out.println("We get magazine from University");
+        System.out.println("------------------------------");
     }
 
     public void returnMagazine(){
         System.out.println("We returned magazine to university");
+        System.out.println("------------------------------");
     }
 
-    public void addBook(){
+    public void addBook(String personName, Book book){
         System.out.println("We add book to university");
+        System.out.println("------------------------------");
     }
 
     public void addMagazine(){
         System.out.println("We add magazine to university");
+        System.out.println("------------------------------");
     }
 
 //    public void getBookWithParameter(Book book){

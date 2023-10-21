@@ -10,4 +10,10 @@ public class Book {
 
     @Value("The Dark Tower")
     private String name;
+
+    @Value("King")
+    private String author;
+
+    @Value("1998")
+    private int yearOfPublication;
 }
