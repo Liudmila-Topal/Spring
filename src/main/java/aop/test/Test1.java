@@ -19,7 +19,7 @@ public class Test1 {
 
         universityLibrary.getBook();
 //        universityLibrary.returnBook();
-//        universityLibrary.getMagazine();
+        universityLibrary.getMagazine();
 //        universityLibrary.addBook();
 //
 //        SchoolLibrary schoolLibrary = context.getBean("schoolLibrary", SchoolLibrary.class);

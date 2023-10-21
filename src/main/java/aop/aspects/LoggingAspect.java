@@ -2,13 +2,13 @@ package aop.aspects;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.context.annotation.Bean;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-public class LoggingAndSecurityAspect {
+@Order(1)
+public class LoggingAspect {
 
 //    @Pointcut("execution(* aop.UniversityLibrary.get*())")
 //    private void allGetMethodsFromUniLibrary(){}
@@ -22,19 +22,9 @@ public class LoggingAndSecurityAspect {
 //    @Pointcut("allGetMethodsFromUniLibrary() || allReturnMethodsFromUniLibrary()")
 //    private void combinationFirstAndSecondPointcut(){}
 
-    @Pointcut("execution(* aop.UniversityLibrary.*(..))")
-    private void allMethodsFromUniLibrary(){}
-
-    @Pointcut("execution(public void aop.UniversityLibrary.returnBook())")
-    private void returnBookFromUniversity(){}
-
-    @Pointcut("allMethodsFromUniLibrary() && !returnBookFromUniversity()")
-    private void withoutReturnBookFromUniversity(){}
-
-    @Before("withoutReturnBookFromUniversity()")
-    public void beforeWithoutReturnLoggingAdvice(){
-        System.out.println("beforeGetLoggingAdvice: Log #10");
-    }
+//    @Pointcut("execution(?houtReturnLoggingAdvice(){
+//        System.out.println("beforeGetLoggingAdvice: Log #10");
+//    }
 
 //    @Before("allGetMethodsFromUniLibrary()")
 //    public void beforeGetLoggingAdvice(){
@@ -56,8 +46,7 @@ public class LoggingAndSecurityAspect {
 //        System.out.println("beforeFirstTwoLoggingAdvice: Log #4");
 //    }
 
-//    @Pointcut("execution(* get*())")
-//    private void allGetMethods(){}
+
 
 //    @Before("execution(public void getBook())") //for all getBook() methods
 //    public void beforeAllGetBookAdvice(){
@@ -89,13 +78,8 @@ public class LoggingAndSecurityAspect {
 //        System.out.println("beforeGetBookAdvice: we're trying to get book");
 //    }
 
-//    @Before("allGetMethods()")
-//    public void beforeGetLoggingAdvices(){
-//        System.out.println("beforeGetLoggingAdvices: we're trying to get book or magazine");
-//    }
-//
-//    @Before("allGetMethods()")
-//    public void beforeGetSecurityAdvices(){
-//        System.out.println("beforeGetSecurityAdvices: check access");
-//    }
+    @Before("aop.aspects.MyPointCats.allGetMethods()")
+    public void beforeGetLoggingAdvices(){
+        System.out.println("beforeGetLoggingAdvices: we're trying to get book or magazine");
+    }
 }
