@@ -1,13 +1,12 @@
 package com.lp.spring.Test;
 
-import com.lp.spring.Dog;
-import org.springframework.context.ApplicationContext;
+import com.lp.spring.objects.Dog;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestIniAndDestroy {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContextInitAndDestroy.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext/applicationContextInitAndDestroy.xml");
 
         Dog myDog = context.getBean("myPet", Dog.class);
         myDog.say();

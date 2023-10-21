@@ -1,7 +1,7 @@
 package com.lp.spring.config;
 
-import com.lp.spring.Cat;
-import com.lp.spring.Person;
+import com.lp.spring.objects.Cat;
+import com.lp.spring.objects.Person;
 import com.lp.spring.Pet;
 import org.springframework.context.annotation.*;
 

@@ -1,6 +1,7 @@
-package com.lp.spring;
+package com.lp.spring.objects;
 
 
+import com.lp.spring.Pet;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
